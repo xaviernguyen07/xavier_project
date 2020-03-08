@@ -1,0 +1,51 @@
+img.zombies{
+    width: 130px;
+    height: 170px;
+}
+html{
+    background: url("images/game_background.gif") no-repeat center center fixed;
+    height: 100%;
+    margin: 0%;
+    background-size: 100% 100vh;
+    cursor: url("images/target.png"), auto; 
+}
+
+body {
+    position: fixed;
+    background-size: 100% 100vh;
+    top: 0%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#score{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(255, 99, 71);
+    font-family:cursive;
+
+}
+
+#endGame{
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    height: 35px;
+    margin-left: -50px;
+    bottom:10px;
+
+}
+#messageToPlayer{
+    text-align: center;
+    color:#1e88e5;
+    font-size: 300%;
+    font-family: monospace;
+}
+.supportItem{
+    position: fixed;
+    width: 75px;
+    height: 70px;
+    left: 50%;
+    transform: translate(-50%);
+}

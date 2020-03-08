@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <input id="startGame" type="image" src="images/start_button.gif" alt="Click here to start"
+        style="position: absolute; top: 50%; left: 50%; width: 220px; height: 270px" onclick="startGame();">
+
+    <button id="endGame" onclick="endGame();">End Game</button>
+
+    <audio id="bungeeSuicide">
+        <source src="audio/Shot-Flare_gun.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="SLR">
+        <source src="audio/shoot_bungee.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="themeAudio" controls loop hidden>
+        <source src="audio/origin_track.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="myGunAudio">
+        <source src="audio/Suppressed_AWM_Shot.ogg" type="audio/ogg">
+        <source src="audio/Suppressed_AWM_Shot (online-audio-converter.com).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="endGameAudio" controls loop hidden>
+        <source src="audio/end_game_sountrack.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="grenadeAudio">
+        <source src="audio/grenade.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="icebergAudio">
+        <source src="audio/iceberg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p id="score">SCORE: 0</p>
+
+    <p id="messageToPlayer"></p>
+
+    <div id="zombieContainer"></div>
+
+    <div id="supportItemContainer"></div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
