@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Assignment 1</title>
     <!-- Mobile viewport optimisation -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,18 @@
 </head>
 
 <body>
-    <!--ym-wrapper-->
-    <div class="wrapperDiv">
-        <!--ym-wbox-->
-        <div class="wrapperBox">
+    <ul class="ym-skiplinks">
+        <li><a class="ym-skip" href="#nav">Skip to navigation (Press Enter)</a></li>
+        <li><a class="ym-skip" href="#main">Skip to main content (Press Enter)</a></li>
+    </ul>
+
+    <div class="ym-wrapper">
+        <div class="ym-wbox">
             <header>
                 <h1>Project Name</h1>
             </header>
             <nav id="nav">
-                <!--ym-hlist-->
-                <div class="navLinks">
+                <div class="ym-hlist">
                     <ul>
                         <li class="active"><strong>Active</strong></li>
                         <li><a href="#">Link</a></li>
@@ -27,8 +30,8 @@
                         <li><a href="#">Link</a></li>
                     </ul>
                     <form class="ym-searchform">
-                        <input class="ym-searchfield" type="search" placeholder="Search...">
-                        <input class="ym-searchbutton" type="submit" value="Search">
+                        <input class="ym-searchfield" type="search" placeholder="Search..." />
+                        <input class="ym-searchbutton" type="submit" value="Search" />
                     </form>
                 </div>
             </nav>
@@ -133,5 +136,9 @@
             </footer>
         </div>
     </div>
+
+    <!-- full skip link functionality in webkit browsers -->
+    <script src="../yaml/core/js/yaml-focusfix.js"></script>
 </body>
+
 </html>

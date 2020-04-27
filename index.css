@@ -688,6 +688,7 @@
     display: none !important;
   }
 }
+/* end core-base.css */
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * YAML form theme: "gray-theme"
@@ -1348,6 +1349,7 @@
     font-size: 0.7143em;
   }
 }
+/* end forms */
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  *
@@ -1362,7 +1364,7 @@
  * @version         4.1.1
  */
  @media all {
-  .navLinks{
+  .ym-hlist {
     /* (en) containing floats in IE */
     /* (de) Einfassen der Floats im IE */
     width: 100%;
@@ -1371,13 +1373,13 @@
     line-height: 1em;
     background: #222;
   }
-  .navLinks ul {
+  .ym-hlist ul {
     margin: 0;
     padding: 0.5em 1.5em;
     display: inline;
     float: left;
   }
-  .navLinks ul li {
+  .ym-hlist ul li {
     display: inline;
     float: left;
     font-size: 1.0em;
@@ -1386,7 +1388,7 @@
     margin: 0 .25em 0 0;
     padding: 0;
   }
-  .navLinks ul li a, .navLinks ul li strong {
+  .ym-hlist ul li a, .ym-hlist ul li strong {
     background: transparent;
     color: #aaa;
     display: block;
@@ -1398,9 +1400,9 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     width: auto;
   }
-  .navLinks ul li a:focus,
-  .navLinks ul li a:hover,
-  .navLinks ul li a:active {
+  .ym-hlist ul li a:focus,
+  .ym-hlist ul li a:hover,
+  .ym-hlist ul li a:active {
     color: #ccc;
     background: #666;
     background: rgba(255, 255, 255, 0.25);
@@ -1408,16 +1410,16 @@
     text-decoration: none;
     outline: 0 none;
   }
-  .navLinks ul li.active {
+  .ym-hlist ul li.active {
     background: #666;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 0.2em;
     color: #fff;
   }
-  .navLinks ul li.active strong,
-  .navLinks ul li.active a:focus,
-  .navLinks ul li.active a:hover,
-  .navLinks ul li.active a:active {
+  .ym-hlist ul li.active strong,
+  .ym-hlist ul li.active a:focus,
+  .ym-hlist ul li.active a:hover,
+  .ym-hlist ul li.active a:active {
     background: transparent;
     color: #fff;
     text-decoration: none;
@@ -1456,6 +1458,7 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   }
 }
+/* end nav */
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  *
@@ -1498,6 +1501,7 @@
     page-break-after: avoid;
   }
 }
+/* end print */
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  *
@@ -1517,13 +1521,13 @@
   }
 
   /* Layout Module Configuration & fallback for unsupported media queries */
-  .wrapperDiv {
+  .ym-wrapper {
     min-width: 760px;
     max-width: 80em;
     margin: 0 auto;
   }
 
-  .wrapperBox{
+  .ym-wbox {
     padding: 10px;
   }
 
@@ -1604,7 +1608,7 @@
 }
 /* reset fallback values in modern browsers */
 @media screen and (min-width: 0px) {
-  .wrapperDiv {
+  .ym-wrapper {
     min-width: 0px;
   }
 }
@@ -1626,7 +1630,7 @@
     overflow: hidden;
   }
 
-  nav .navLinks ul {
+  nav .ym-hlist ul {
     padding-right: 10px;
   }
 
@@ -1643,7 +1647,7 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .wrapperBox {
+  .ym-wbox {
     padding: 0;
   }
 
@@ -1659,7 +1663,7 @@
   footer,
   main,
   .ym-searchform,
-  nav .navLinks ul {
+  nav .ym-hlist ul {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1682,8 +1686,8 @@
   }
 
   .ym-searchform,
-  nav .navLinks ul,
-  nav .navLinks li {
+  nav .ym-hlist ul,
+  nav .ym-hlist li {
     display: block;
     float: none;
     width: auto;
@@ -2180,3 +2184,4 @@
     background: #f8f8f8;
   }
 }
+/* end screen */
