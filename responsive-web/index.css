@@ -1,0 +1,129 @@
+/* force vertical scrollbar */
+body {
+    overflow-y: scroll;
+}
+/* makes the main page content centered on the page */
+.wrapper {
+    max-width: 60rem;
+    margin: auto;
+}
+header {
+    background: #444;
+    color: #ccc;
+    padding: 1.5em;
+    display: block;
+    margin: 0;
+}
+header h1 {
+    background: transparent;
+    color: #fff;
+}
+nav {
+    background: #222222;
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+}
+nav ul li, ul.nav-links{
+    display: inline;
+    list-style-type: none;
+    color: whitesmoke;
+    padding-left: 10px;
+}
+form{
+    display: inline-block;
+    float: right;
+    padding-right: 10px;
+}
+/* makes main become a grid which has 3 columns */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+footer {
+    margin: 0;
+    background: #eee;
+    color: #444;
+    padding: 1.5em;
+}
+footer p {
+    margin: 0;
+}
+.sections-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+}
+/* makes the main content span the first row of the main content container grid */
+.main-content {
+    grid-column: 1/span 2;
+    background-color: #f4f4f4;
+    border: 2px solid black;
+    padding: 20px;
+}
+.section {
+    padding: 10px;
+}
+/* creates a grid of two columns for the widgets */
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+aside {
+    display: block;
+    margin: 10px;
+}
+/* Tablet view */
+@media (min-width: 400px) and (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img {
+        width: 100%;
+    }
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .wrapper {
+        min-width: 35rem;
+    }
+}
+/*Mobile view*/
+@media (max-width: 399px) {
+    nav ul li, ul.nav-links {
+        display: block;
+    }
+    form {
+        display: block;
+        float: left;
+        padding-left: 10px;
+    }
+    nav {
+        padding-bottom: 25px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img {
+        width: 100%;
+    }
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sections-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+    .main-content {
+        grid-column: 1/span 1;
+    }
+    .wrapper {
+        min-width: 19rem;
+    }
+}
